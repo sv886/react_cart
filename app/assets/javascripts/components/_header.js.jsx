@@ -6,12 +6,16 @@
 
 // Read more at https://www.pluralsight.com/guides/ruby-ruby-on-rails/building-a-crud-interface-with-react-and-ruby-on-rails#A16rPEf0Lc3Aeyoj.99
 
-var Main = React.createClass({
+var Header = React.createClass({
   render() {
     return (
 
       <div>
-        <Header />
+        <h1>Shmello, Shmorld!</h1>
+        <ol>
+          <li>un</li>
+          <li>da</li>
+        </ol>
       </div>
 
     )
