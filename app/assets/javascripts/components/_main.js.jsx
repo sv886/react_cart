@@ -12,6 +12,7 @@ var Main = React.createClass({
 
       <div>
         <Header />
+        <Body />
       </div>
 
     )
