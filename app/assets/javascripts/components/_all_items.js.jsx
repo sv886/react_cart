@@ -9,6 +9,9 @@
 // 2 methods in this component.
 
 var AllItems = React.createClass ({
+  handleDelete(id) {
+        this.props.handleDelete(id);
+    },
 
   render() {
 
@@ -17,6 +20,7 @@ var AllItems = React.createClass ({
         <div key={item.id}>
           <h3>{item.name} {item.id}</h3>
           <p>{item.description}</p>
+          <button onClick={this.handleDelete.bind(this, item.id)}>Delete</button>
         </div>
       )
     });
