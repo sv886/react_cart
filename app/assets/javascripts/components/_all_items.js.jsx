@@ -14,10 +14,6 @@ var AllItems = React.createClass ({
         this.props.handleDelete(id);
     },
 
-  handleEdit() {
-
-    },
-
   render() {
 
     var items = this.props.items.map((item) => {
