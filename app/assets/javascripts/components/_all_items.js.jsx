@@ -9,8 +9,13 @@
 // 2 methods in this component.
 
 var AllItems = React.createClass ({
+
   handleDelete(id) {
         this.props.handleDelete(id);
+    },
+
+  handleEdit() {
+
     },
 
   render() {
@@ -18,9 +23,9 @@ var AllItems = React.createClass ({
     var items = this.props.items.map((item) => {
       return (
         <div key={item.id}>
-          <h3>{item.name} {item.id}</h3>
-          <p>{item.description}</p>
-          <button onClick={this.handleDelete.bind(this, item.id)}>Delete</button>
+          <Item item={item}
+            handleDelete={this.handleDelete.bind(this, item.id)}
+            handleEdit={this.handleEdit}/>
         </div>
       )
     });
